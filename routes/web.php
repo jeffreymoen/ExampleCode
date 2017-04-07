@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/create/dog', 'AnimalController@createDog');
+Route::get('/create/cat', 'AnimalController@createCat');
+Route::get('/create/snake', 'AnimalController@createSnake');
+
